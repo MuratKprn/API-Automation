@@ -14,7 +14,7 @@ public class C07_GettingRidOfBodyRepetitions {
     @Test
     public void gettingRidOfBodyRepetitions(){
 
-        // Send a GET request to the URL https://jsonplaceholder.typicode.com/posts
+        // Send a GET request to the URL https://restful-booker.herokuapp.com/booking/10
         String url = "https://restful-booker.herokuapp.com/booking/10";
 
         // Returning response

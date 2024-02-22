@@ -10,7 +10,7 @@ public class C04_Put_ResponseAssertion {
     @Test
     public void put01(){
 
-        // Send a GET request to the URL https://jsonplaceholder.typicode.com/posts/70
+        // Send a PUT request to the URL https://jsonplaceholder.typicode.com/posts/70
         String url = "https://jsonplaceholder.typicode.com/posts/70";
 
         JSONObject reqBody = new JSONObject();

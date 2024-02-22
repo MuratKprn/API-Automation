@@ -12,16 +12,16 @@ public class C06_Post_ResponseBodyTest {
     @Test
     public void PostResponseBodyTest(){
 
-        // Send a GET request to the URL https://jsonplaceholder.typicode.com/posts
+        // Send a POST request to the URL https://jsonplaceholder.typicode.com/posts
         String url="https://jsonplaceholder.typicode.com/posts";
 
-        JSONObject reqBody=new JSONObject();
+        JSONObject reqBody = new JSONObject();
         reqBody.put("title","API");
         reqBody.put("body","API Nice");
         reqBody.put("userId",10);
 
         // Returning Response
-        Response response=given().contentType(ContentType.JSON).when().body(reqBody.toString()).post(url);
+        Response response = given().contentType(ContentType.JSON).when().body(reqBody.toString()).post(url);
 
         response.then().assertThat() // Test it
                 .statusCode(201) // Status Code is 201
